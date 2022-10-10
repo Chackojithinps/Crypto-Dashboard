@@ -6,7 +6,7 @@
     height: 90px;
     align-items: center;
 }
-.heading1 {
+.heading{
     padding-left: 3rem;
 }
 .links-flex{
@@ -29,3 +29,21 @@ a {
     color: var(--white);
     cursor: pointer;
 }
+.menu-div{
+    display: none;
+    margin-right: 2rem;
+}
+@media only screen and (max-width: 800px) {
+     .links-flex{
+        display: none;
+     }
+     .menu-div{
+        margin-bottom: 1rem;
+        display: block;
+     }
+     .heading{
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+     }
+  }

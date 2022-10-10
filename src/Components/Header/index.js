@@ -1,10 +1,11 @@
+import  Drawer  from './Drawer'
 import React from 'react'
 import Button from '../../Button'
 import './style.css'
 const Header = () => {
   return (
     <div className='navbar'>
-       <h1 className='heading1'>
+       <h1 className='heading'>
           CryptoTracker<span style={{color:"var(--blue)"}}>.</span>
        </h1>
        <div className='links-flex'>
@@ -23,6 +24,9 @@ const Header = () => {
              </p>
           </a>
        </div>
+       <div className="menu-div">
+          <Drawer/>
+        </div>
        
     </div>
   )
