@@ -9,9 +9,8 @@ export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
   return (
     <div>
-      {['right'].map((anchor) => (
-        <React.Fragment key={anchor}>
-        <div className='menu-button'>
+     
+         <div className='menu-button'>
             <IconButton  onClick={()=>{setOpen(true)}} >
                 <MenuIcon style={{color:"var(--white)"}}/>
             </IconButton>
@@ -36,8 +35,7 @@ export default function TemporaryDrawer() {
             </div>
            
           </Drawer>
-        </React.Fragment>
-      ))}
+  
     </div>
   );
 }

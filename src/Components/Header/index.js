@@ -1,4 +1,5 @@
-import  Drawer  from './Drawer'
+// import  Drawer  from './Drawer'
+import TemporaryDrawer from './Drawer'
 import React from 'react'
 import Button from '../../Button'
 import './style.css'
@@ -25,7 +26,7 @@ const Header = () => {
           </a>
        </div>
        <div className="menu-div">
-          <Drawer/>
+          <TemporaryDrawer/>
         </div>
        
     </div>
