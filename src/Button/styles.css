@@ -10,3 +10,7 @@
     font-weight: 600;
     margin: 0;
 }
+.button-wrapper:hover{
+    box-shadow: 4px 4px 15px rgba(58, 128, 233, 0.5);
+    transition: all 0.3s;
+}

@@ -6,10 +6,9 @@
   --grey: #888;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
+
 html{
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 body {
@@ -21,6 +20,27 @@ body {
   background-color: var(--black);
   color: var(--white);
   height: 100vh;
+}
+::selection{
+  background-color: var(--blue);
+  color: var(--white);
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -user-drag: none;
+}
+::-webkit-scrollbar{
+  width: 0.4rem;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--black);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+  border-radius: 1rem;
 }
 
 /* for headings */

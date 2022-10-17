@@ -19,7 +19,7 @@ export default function TemporaryDrawer() {
           <Drawer anchor={'right'} open={open} onClose={()=>setOpen(false)}>
             <div className='drawer-div'>
                 <a href='/'>
-                <p className='links'>Home</p>
+                    <p className='links'>Home</p>
                 </a>
                 <a href="/search">
                     <p className="links">Search</p>
