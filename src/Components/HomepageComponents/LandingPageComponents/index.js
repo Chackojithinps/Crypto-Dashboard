@@ -1,9 +1,42 @@
 import React from 'react'
 import './style.css'
+import blueShade from '../../../assets/blueShade.png'
+import cryptoMobile from '../../../assets/cryptoMobile.png'
+import {animate, motion} from 'framer-motion'
+import Button from '../../../Button'
+import OutlineButton from '../../../OutlineButton/Button'
 const LandingPageComponent = () => {
   return (
-    <div className='kikki'>
-       <h1 style={{color:"var(--white)"}}>LandingPageComponent</h1>
+    <div className='wrapper'>
+       <div className='heading-sec'>
+        <motion.h1 className='big-heading' 
+            initial={{opacity:0.5, y:50}}
+            animate={{opacity:1, y:0}}
+            transition={{type:"spring", duration:1}}>
+          <span className='big-first-heading'>Track Crypto</span>
+          <br/>
+          <span className='big-heading-blue'>Real Time.</span>
+        </motion.h1>
+        <p className='para'>Track crypto through a public api in real time. Visit the dashboard to do so!</p>
+        <div className='left-buttons'>
+           <a href='/dashboard'>
+              <Button text='Dashboard'/>
+           </a>
+           <div className='outline-btn'>
+              <OutlineButton text={"Share"}/>
+           </div>
+        </div>
+       </div>
+       
+       <div className='image-box'>
+           <img className='blueShade' src={blueShade}></img>
+           <motion.img 
+             initial={{y:-10}}
+             animate={{y:10}}
+             transition={{type:"smooth",duration:2,repeat:Infinity,repeatType:'mirror'}}
+           className='crypto-image' src={cryptoMobile}></motion.img>
+       </div>
+     
     </div>
   )
 }

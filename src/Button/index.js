@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles.css'
-const Button = ({text,onClick}) => {
+const Button = ({text}) => {
   return (
-    <div className='button-wrapper' onClick={onClick}>
+    <div className='button-wrapper' onClick={()=>alert("hello")}>
       <p>{text}</p>
     </div>
   )

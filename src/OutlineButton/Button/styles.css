@@ -1,0 +1,21 @@
+.outline-button-wrapper{
+    background-color: var(--black);
+    font-weight: 600;
+    width: 5rem;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 0.70rem 2rem;
+    border: 2px solid var(--blue);
+    
+}
+.outline-button-wrapper p {
+    color: var(--white);
+    font-weight: 600;
+    margin: 0;
+}
+.outline-button-wrapper:hover{
+    box-shadow: 4px 4px 15px rgba(58, 128, 233, 0.5);
+    transition: all 0.3s;
+    background-color: var(--blue);
+    cursor: pointer;
+}

@@ -21,13 +21,13 @@ const Header = () => {
           </a>
           <a href="/dashboard">
              <p className="links">
-               <Button text="Dashboard" onClick={()=>alert("Hi")}/>
+               <Button text="Dashboard"/>
              </p>
           </a>
        </div>
        <div className="menu-div">
           <TemporaryDrawer/>
-        </div>
+       </div>
        
     </div>
   )

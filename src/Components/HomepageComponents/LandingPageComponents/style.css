@@ -1,4 +1,49 @@
-.kikki{
-    margin-top: 8rem;
-    height: 800px;
+.wrapper{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.big-heading{
+    font-size: 8rem;
+}
+.big-heading-blue{
+    color: var(--blue);
+}
+.big-first-heading:hover{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:var(--white);
+    color: var(--black);
+    transition: all 0.5s;
+}
+img.crypto-image {
+    /* width: 65%; */
+    width: 24rem;
+    height: 42rem;
+    position: absolute;
+   right: 3rem;
+}
+.image-box{
+    position: relative;
+    bottom: 15rem;
+    right: 1rem;
+}
+
+img.blueShade {
+    position: absolute;
+    right: 43px;
+    width: 19rem;
+    height: 35rem;
+    top: 8rem;
+}
+.para{
+    color: var(--grey);
+    margin-top: -70px;
+}
+.left-buttons{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
 }
