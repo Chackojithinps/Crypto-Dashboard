@@ -2,7 +2,8 @@ import React from 'react'
 import './style.css'
 import blueShade from '../../../assets/blueShade.png'
 import cryptoMobile from '../../../assets/cryptoMobile.png'
-import {animate, motion} from 'framer-motion'
+import { motion} from 'framer-motion'
+import { RWebShare } from "react-web-share";
 import Button from '../../../Button'
 import OutlineButton from '../../../OutlineButton/Button'
 const LandingPageComponent = () => {
@@ -22,8 +23,19 @@ const LandingPageComponent = () => {
            <a href='/dashboard'>
               <Button text='Dashboard'/>
            </a>
+
            <div className='outline-btn'>
-              <OutlineButton text={"Share"}/>
+           <RWebShare
+              data={{
+                text: "checkout my crypto tracker made using react",
+                url: "https://on.natgeo.com/2zHaNup",
+                title: "crypto-tracker",
+              }}
+              onClick={() => console.log("shared successfully!")}
+            >
+           <OutlineButton text={"Share"}/>
+         </RWebShare>
+              
            </div>
         </div>
        </div>
