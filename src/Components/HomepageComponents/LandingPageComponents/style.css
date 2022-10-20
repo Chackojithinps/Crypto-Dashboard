@@ -35,7 +35,7 @@ img.blueShade {
     position: absolute;
     right: 43px;
     width: 19rem;
-    height: 35rem;
+    object-fit: contain;
     top: 8rem;
 }
 .para{
@@ -46,4 +46,93 @@ img.blueShade {
     margin-top: 4rem;
     display: flex;
     gap: 2rem;
+}
+
+@media only screen and (max-width: 1433px) {
+    .big-heading{
+        font-size: 5rem;
+    }
+    .image-box{
+        margin-top: 10rem;
+    }
+    img.crypto-image{
+        width: 20rem;
+        height: 35rem;
+    }
+    img.blueShade{
+        width: 15rem;
+        height: 30rem;
+    }
+    .para{
+        margin-top: -28px;
+        width: 30rem;
+    }
+}
+@media only screen and (max-width: 997px) {
+    .big-heading{
+        font-size: 3rem;
+    }
+    .para{
+        /* margin-top: -28px; */
+        width: 20rem;
+    }
+    img.crypto-image{
+        width: 15rem;
+        height: 25rem;
+    }
+    img.blueShade{
+        width: 10rem;
+        height: 25rem;
+        margin-top: -4rem;
+    }
+    .image-box{
+        margin-top: 15rem;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .big-heading{
+        font-size: 2rem;
+    }
+    .para{
+        /* margin-top: -28px; */
+        width: 20rem;
+    }
+    img.crypto-image{
+        width: 10rem;
+        height: 18rem;
+    }
+    img.blueShade{
+        width: 7rem;
+        height: 24rem;
+        margin-top: -8rem;
+    }
+    .image-box{
+        margin-top: 15rem;
+    }
+}
+@media only screen and (max-width: 664px) {
+    .wrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .big-heading{
+        font-size: 2rem;
+        
+    }
+    .para{
+        /* margin-top: -28px; */
+        width: 20rem;
+    }
+    img.crypto-image{
+        width: 10rem;
+        height: 18rem;
+    }
+    img.blueShade{
+        width: 7rem;
+        height: 24rem;
+        margin-top: -8rem;
+    }
+    .image-box{
+        margin-top: 15rem;
+    }
 }
