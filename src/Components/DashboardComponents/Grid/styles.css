@@ -1,0 +1,36 @@
+.coin-box{
+  
+    background-color: var(--darkgrey);
+    width: 300px;
+    height: 300px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.logo-div{
+    display: flex;
+    width: 100%;   
+}
+.logo{
+    width: 17%;
+    height: 54%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.coin-info {
+    margin-left: 19px;
+ 
+}
+.coin-symbol{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 31px;
+    text-transform: uppercase;
+}
+.coin-name{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 1px;
+    margin-top: -21px;
+}

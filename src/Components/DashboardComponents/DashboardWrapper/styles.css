@@ -1,0 +1,16 @@
+.tab-wrapper{
+    margin-top: 7rem;
+    display: block;
+    width: 100%;
+    
+}
+.grid-flex{
+   
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
