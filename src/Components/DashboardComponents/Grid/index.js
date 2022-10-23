@@ -47,6 +47,16 @@ const Grid = ({coin}) => {
              }
          </div>
       </div>
+      <div className='coin-price'>
+         {coin.price_change_percentage_24h>0?
+           <p className='price-up'>${coin.current_price.toFixed(2)}</p>
+           :<p className='price-down'>${coin.current_price}</p>
+         }
+      </div>
+      <div className='coin-details'>
+           <p className='coin-vol'><span>Total Volume :</span> ${coin.total_volume.toLocaleString()}</p>
+           <p className='coin-marketCap'><span>Market Cap :</span> ${coin.market_cap.toLocaleString()}</p>
+      </div>
     </div>
   )
 }
