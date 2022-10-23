@@ -7,6 +7,7 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    cursor: pointer;
 }
 .logo-div{
     display: flex;
@@ -33,4 +34,73 @@
     opacity: 0.8;
     margin-top: 1px;
     margin-top: -21px;
+}
+.upChip{
+    border: 2px solid var(--green);
+    margin-left: 31px;
+    margin-top: 20px;
+    width: 96px;
+    color: var(--green);
+    display: flex;
+    border-radius: 43px;
+    padding: 1px -14px;
+    height: 37px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.downChip{
+    border: 2px solid var(--red);
+    margin-left: 31px;
+    margin-top: 20px;
+    width: 96px;
+    color: var(--red);
+    display: flex;
+    border-radius: 43px;
+    padding: 1px -14px;
+    height: 37px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.upChip:hover{
+    background-color: var(--green);
+    color: white;
+}
+.downChip:hover{
+    background-color: var(--red);
+    color: white;
+}
+.data-div {
+    display: flex;
+}
+.upTrend{
+    margin-top: 21px;
+    margin-left: 16px;
+    border: 2px solid var(--green) ;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    color: var(--green);
+    text-align: center;
+    padding: 4px;
+}
+.downTrend{
+    margin-top: 21px;
+    margin-left: 16px;
+    border: 2px solid var(--red) ;
+    border-radius: 50%;
+    width: 27px;
+    color: var(--red);
+    height: 27px;
+    text-align: center;
+    padding: 4px;
+}
+.upTrend:hover{
+    background-color: var(--green);
+    color: white;
+}
+.downTrend:hover{
+    background-color: var(--red);
+    color: white;
 }
