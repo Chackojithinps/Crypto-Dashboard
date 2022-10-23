@@ -6,6 +6,8 @@ import TabPanel from '@mui/lab/TabPanel';
 import TabContext from '@mui/lab/TabContext';
 
 import Grid from '../Grid';
+import List from '../List';
+
 
 const DashboardWrapper = ({data}) => {
   
@@ -32,7 +34,13 @@ const DashboardWrapper = ({data}) => {
           </div>
         </TabPanel>
         <TabPanel value={1}>
-          Item Two
+        <table className='list-flex'>
+            {
+              data.map((coin,i)=>(
+                  <List coin={coin} key={i}/>
+              ))
+            }
+          </table>
         </TabPanel>
        </TabContext>
         

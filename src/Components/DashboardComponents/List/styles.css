@@ -1,0 +1,41 @@
+.list-coin-box{
+   width: 100%;
+   display: flex;
+   /* background-color:var(--darkgrey); */
+   cursor: pointer;
+   align-items: center;
+   justify-content: center;
+   height: 93px;
+}
+.list-logo-div{
+    display: flex;  
+    margin-bottom: 17px;
+}
+.list-logo{
+    width: 50px;
+    height: 58%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.min{
+    width: 18%;
+}
+.list-data-div{
+    display: flex;
+    margin-bottom: 23px;
+}
+.list-coin-price{
+    margin-bottom: 16px;
+}
+.vol{
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 1110px) {
+    .list-logo-div{
+        width: 40px;
+        height: 50%;
+    }
+    .text-td{
+        font-size: 80%;
+    }
+}
