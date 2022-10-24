@@ -4,6 +4,7 @@ import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
 const Grid = ({coin}) => {
   return (
+   <a href={`/coin?${coin.id}`}>
     <div className='coin-box'>
        <div className='logo-div'>
           <img className='logo' src={coin.image}/>
@@ -58,6 +59,7 @@ const Grid = ({coin}) => {
            <p className='coin-marketCap'><span>Market Cap :</span> ${coin.market_cap.toLocaleString()}</p>
       </div>
     </div>
+    </a>
   )
 }
 

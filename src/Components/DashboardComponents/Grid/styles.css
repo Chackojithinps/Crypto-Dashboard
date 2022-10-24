@@ -21,7 +21,7 @@
 }
 .coin-info {
     margin-left: 19px;
- 
+    color: var(--white);
 }
 .coin-symbol{
     font-weight: 600;
