@@ -13,7 +13,7 @@
 }
 .list-logo{
     width: 50px;
-    height: 58%;
+    height: 50px;
     margin-left: 2rem;
     margin-top: 2rem;
 }
@@ -30,12 +30,59 @@
 .vol{
     font-size: 1.2rem;
 }
-@media only screen and (max-width: 1110px) {
-    .list-logo-div{
-        width: 40px;
-        height: 50%;
+@media only screen and (max-width: 1185px) {
+   .list-logo{
+    width: 40px;
+    height: 40px;
+   }
+   .text-td{
+     font-size: 80%;
+   }
+   .coin-name{
+     margin-top: -10px;
+   }
+   .chip-td{
+     width: 85px;
+     height: 30px;
+     margin-top: 25px;
+   }
+   .trend-td{
+     width: 23px;
+     height: 23px;
+     display: flex;
+     align-items: center;
+     margin-top: 25px;
+   }
+   .min{
+    width: 20%;
+   }
+}
+@media only screen and (max-width: 878px) {
+    .list-logo{
+        width: 35px;
+        height: 35px;
+        margin-left: 0px;
     }
     .text-td{
-        font-size: 80%;
+        font-size: 70%;
+      }
+    .chip-td{
+        width: 50px;
+        height: 20px;
+        margin-top: 27px;
+        margin-left:2rem ;
+      }
+    .trend-td{
+        display: none;
     }
+    .vol{
+        display: none;
+    }
+    .min{
+        width: 30%;
+       }
+    .markt_cap{
+        padding-left: 10px;
+    }
+   
 }
