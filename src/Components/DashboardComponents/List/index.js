@@ -8,7 +8,7 @@ const List = ({coin}) => {
        <td className='list-logo-div min'>
           <img className='list-logo' src={coin.image}/>
      
-          <div className='coin-info'>
+          <div className='coin-info coin-info-td'>
              <p className='coin-symbol text-td'>{coin.symbol}-USD</p>
              <p className='coin-name text-td coin-name'>{coin.name}</p>
           </div>

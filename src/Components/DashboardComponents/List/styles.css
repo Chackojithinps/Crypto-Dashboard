@@ -57,6 +57,7 @@
     width: 20%;
    }
 }
+
 @media only screen and (max-width: 878px) {
     .list-logo{
         width: 35px;
@@ -67,17 +68,12 @@
         font-size: 70%;
       }
     .chip-td{
-        width: 50px;
-        height: 20px;
+        width: 70px;
+        height: 30px;
         margin-top: 27px;
-        margin-left:2rem ;
+        margin-left:4rem ;
       }
-    .trend-td{
-        display: none;
-    }
-    .vol{
-        display: none;
-    }
+  
     .min{
         width: 30%;
        }
@@ -85,4 +81,26 @@
         padding-left: 10px;
     }
    
+   
+}
+@media only screen and (max-width: 716px) {
+    .text-td{
+        font-size: 60%;
+      }
+      .trend-td,.vol{
+        display: none;
+      }
+      .chip-td{
+        width: 50px;
+        height: 20px;
+        margin-top: 27px;
+        margin-left:2rem ;
+      }
+      .min{
+        width: 24%;
+      }
+      .markt_cap{
+        margin-top: 5px;
+        margin-left: 3px;
+      }
 }
