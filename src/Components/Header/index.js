@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div className='navbar'>
        <h1 className='heading'>
-          CryptoTracker<span style={{color:"var(--blue)"}}>.</span>
+         <a href='/'>
+          <span className='heading-in'>CryptoTracker</span><span style={{color:"var(--blue)"}}>.</span>
+          </a>
        </h1>
        <div className='links-flex'>
           <a href='/'>
