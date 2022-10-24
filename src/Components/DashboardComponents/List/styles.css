@@ -30,6 +30,9 @@
 .vol{
     font-size: 1.2rem;
 }
+.vol_td{
+    display: none;
+}
 @media only screen and (max-width: 1185px) {
    .list-logo{
     width: 40px;
@@ -102,5 +105,11 @@
       .markt_cap{
         margin-top: 5px;
         margin-left: 3px;
+      }
+      .vol_td{
+         display: block;
+      }
+      .volume_td{
+        display: none;
       }
 }

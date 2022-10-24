@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles.css'
 import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
 const List = ({coin}) => {
+   const [volume,setVolume]=useState(coin.total_volume);
+   useEffect(()=>{
+      if(volume){
+         if(volume>=1000 && volume<1000000){
+            setVolume(volume.toString().slice(0,-3)+"."+
+                      volume.toString().slice(-3,-1)+"K")
+         }else if(volume>=1000000 && volume<1000000000){
+            setVolume(volume.toString().slice(0,-6)+"."+
+                      volume.toString().slice(-6,-4)+"M")
+         }
+         else if(volume>=1000000000){
+            setVolume(volume.toString().slice(0,-9)+"."+
+                      volume.toString().slice(-9,-7)+"B")
+         }
+      }
+      },[volume])
   return (
       <tr className='list-coin-box'>
        <td className='list-logo-div min'>
@@ -35,11 +51,12 @@ const List = ({coin}) => {
       <td className='list-coin-price min '>
          {coin.price_change_percentage_24h>0?
            <p className='price-up text-td'>${coin.current_price.toFixed(2)}</p>
-           :<p className='price-down text-td'>${coin.current_price}</p>
+           :<p className='price-down text-td'>${coin.current_price.toFixed(2)}</p>
          }
       </td>
      
-       <td className='coin-vol markt_cap min text-td'> ${coin.total_volume.toLocaleString()}</td>
+       <td className='coin-vol markt_cap  min text-td volume_td'> ${coin.total_volume.toLocaleString()}</td>
+       <td className='coin-vol markt_cap min text-td vol_td'> ${volume}</td>
        <td className='coin-marketCap vol min text-td'> ${coin.market_cap.toLocaleString()}</td>
     
     </tr>
