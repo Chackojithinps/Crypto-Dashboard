@@ -1,9 +1,10 @@
 import React from 'react'
-
-const LineChart = () => {
+import './styles.css'
+import {Line} from 'react-chartjs-2'
+const LineChart = ({chartData,options}) => {
   return (
     <div>
-        
+        <Line data={chartData} options={options} />
     </div>
   )
 }

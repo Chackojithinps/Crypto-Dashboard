@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Loader1 from '../Components/Loader';
 import Header from '../Components/Header'
+import LineChart from '../Components/DashboardComponents/LineChart';
 const CoinPages = () => {
     const [searchParams]=useSearchParams();
     const [data,setData]=useState([])
@@ -42,19 +43,15 @@ const CoinPages = () => {
        
        <div className='kkkk'>
           
-          {loading?<Loader1/>:
+          {
+          loading?<Loader1/>:
           <>
           <Header/>
-          <h1>{searchParams}</h1>
-          {
-            prices?.map((coin,i)=>(
-              <p>{coin[1]}</p>
-            ))
-          }
-          </>}
+          <LineChart/>
+          </>
+         }
        </div>
     </div>
   )
 }
-
 export default CoinPages
