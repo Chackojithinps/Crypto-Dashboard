@@ -1,0 +1,33 @@
+.search-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SearchInp{
+    /* margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 80%;
+    background: var(--darkgrey);
+    margin-top: 7rem;
+    display: flex;
+    border-radius: 2rem;
+    align-items: center;
+}
+.searchInput {
+    width: 75%;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: var(--darkgrey);
+    border: none;
+    color: white;
+    font-weight: 500;
+    outline: none;
+    font-size: 1.2rem;
+}
+.searchIcon{
+    margin-left: 2rem;
+    color: gray;
+}

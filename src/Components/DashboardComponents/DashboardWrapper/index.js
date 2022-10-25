@@ -27,7 +27,7 @@ const DashboardWrapper = ({data}) => {
           <TabPanel value={0}>
           <div className='grid-flex'>
             {
-              data.map((coin,i)=>(
+              data.length==0?<p>No Crypto Curreny Found</p>:data.map((coin,i)=>(
                   <Grid coin={coin} key={i}/>
               ))
             }
@@ -36,7 +36,7 @@ const DashboardWrapper = ({data}) => {
         <TabPanel value={1}>
         <table className='list-flex'>
             {
-              data.map((coin,i)=>(
+              data.length==0?<p>No Crypto Currency Found</p>:data.map((coin,i)=>(
                   <List coin={coin} key={i}/>
               ))
             }
