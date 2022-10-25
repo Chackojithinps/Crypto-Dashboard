@@ -34,13 +34,13 @@ const DashboardWrapper = ({data}) => {
           </div>
         </TabPanel>
         <TabPanel value={1}>
-        <table className='list-flex'>
+        <div className='list-flex'>
             {
               data.length==0?<p>No Crypto Currency Found</p>:data.map((coin,i)=>(
                   <List coin={coin} key={i}/>
               ))
             }
-          </table>
+          </div>
         </TabPanel>
        </TabContext>
         

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './styles.css'
 import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
+import { Link } from 'react-router-dom';
 const List = ({coin}) => {
    const [volume,setVolume]=useState(coin.total_volume);
    useEffect(()=>{
@@ -20,16 +21,18 @@ const List = ({coin}) => {
       }
       },[volume])
   return (
-      <tr className='list-coin-box'>
-       <td className='list-logo-div min'>
+   <Link to={`/coin?${coin.id}`}>
+      <div className='list-coin-box'>
+         
+       <div className='list-logo-div min'>
           <img className='list-logo' src={coin.image}/>
      
           <div className='coin-info coin-info-td'>
              <p className='coin-symbol text-td'>{coin.symbol}-USD</p>
              <p className='coin-name text-td coin-name'>{coin.name}</p>
           </div>
-       </td>
-       <td className='list-data-div min'>
+       </div>
+       <div className='list-data-div min'>
           
          <div className='chip'>
              {coin.price_change_percentage_24h>0?
@@ -47,20 +50,20 @@ const List = ({coin}) => {
               </div>
              }
          </div>
-      </td>
-      <td className='list-coin-price min '>
+      </div>
+      <div className='list-coin-price min '>
          {coin.price_change_percentage_24h>0?
            <p className='price-up text-td'>${coin.current_price.toFixed(2)}</p>
            :<p className='price-down text-td'>${coin.current_price.toFixed(2)}</p>
          }
-      </td>
+      </div>
      
-       <td className='coin-vol markt_cap  min text-td volume_td'> ${coin.total_volume.toLocaleString()}</td>
-       <td className='coin-vol markt_cap min text-td vol_td'> ${volume}</td>
-       <td className='coin-marketCap vol min text-td'> ${coin.market_cap.toLocaleString()}</td>
-    
-    </tr>
-   
+       <div className='coin-vol col markt_cap  min text-td volume_td'> ${coin.total_volume.toLocaleString()}</div>
+       <div className='coin-vol col markt_cap min text-td vol_td'> ${volume}</div>
+       <div className='coin-marketCap col vol min text-td'> ${coin.market_cap.toLocaleString()}</div>
+      
+    </div>
+  </Link>
   )
 }
 
