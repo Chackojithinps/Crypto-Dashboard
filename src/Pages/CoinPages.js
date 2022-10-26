@@ -16,7 +16,7 @@ const CoinPages = () => {
     const [chartData,setChartData]=useState({})
     
     const today=new Date();
-    const priorDate=new Date(new Date().setDate(today.getDate()-30))
+    const priorDate=new Date(new Date().setDate(today.getDate()-90))
 
     const getDateArray=(start,end)=>{
         var arr=new Array();
@@ -38,7 +38,7 @@ const CoinPages = () => {
                 setData(res.data)
 
                
-                    const API_URL=`https://api.coingecko.com/api/v3/coins/${res.data.id}/market_chart?vs_currency=usd&days=30&interval=daily`;
+                    const API_URL=`https://api.coingecko.com/api/v3/coins/${res.data.id}/market_chart?vs_currency=usd&days=90&interval=daily`;
                     axios.get(API_URL).then((response)=>{
                         if(response.data){
                             console.log(response.data)
