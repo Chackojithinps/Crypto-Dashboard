@@ -22,6 +22,7 @@ const Dashboard = () => {
   useEffect(()=>{
     axios.get(API_URL).then((res)=>{
       if(res.data){
+        console.log(res.data)
         setData(res.data)
         setLoading(false)
       }else{
