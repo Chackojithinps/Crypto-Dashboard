@@ -36,9 +36,7 @@ const CoinPages = () => {
             if(res.data){
                 console.log(res.data)
                 setData(res.data)
-
-               
-                    const API_URL=`https://api.coingecko.com/api/v3/coins/${res.data.id}/market_chart?vs_currency=usd&days=90&interval=daily`;
+                const API_URL=`https://api.coingecko.com/api/v3/coins/${res.data.id}/market_chart?vs_currency=usd&days=90&interval=daily`;
                     axios.get(API_URL).then((response)=>{
                         if(response.data){
                             console.log(response.data)
@@ -72,38 +70,7 @@ const CoinPages = () => {
            
         })
     },[searchParams])
-    
-//     useEffect(()=>{
-//       const API_URL=`https://api.coingecko.com/api/v3/coins/${data.id}/market_chart?vs_currency=usd&days=30&interval=daily`;
-//       axios.get(API_URL).then((res)=>{
-//           if(res.data){
-//               console.log(res.data)
-//               setPrices(res.data.prices)
-//               setLoadingChart(false)
-//               setChartData({
-//                     labels: res.data.prices?.map((data)=>data[0]),
-//                     datasets:[
-//                         {
-//                            data:res.data.prices?.map((data)=>data[1]),
-//                            borderWidth:2,
-//                            fill:false,
-//                            tension:0.25,
-//                            backgroundColor:"white",
-//                            borderColor:"white",
-//                            pointRadious:0,
-//                         }
-//                     ]
-//                   }
-//               )
-//           }else{
-//               console.log("error")
-//           }
-         
-//       })
-//   },[data])
-   
-  
-    return (
+   return (
     <div>
        
        <div className='kkkk'>
