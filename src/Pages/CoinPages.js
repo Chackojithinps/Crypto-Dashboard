@@ -4,7 +4,7 @@ import { useSearchParams } from 'react-router-dom'
 import Loader1 from '../Components/Loader';
 import Header from '../Components/Header'
 import LineChart from '../Components/DashboardComponents/LineChart';
-import List from '../Components/DashboardComponents/List'
+import ChartList from '../Components/DashboardComponents/ChartList'
 import { Chart as ChartJS } from "chart.js/auto";
 
 
@@ -80,7 +80,7 @@ const CoinPages = () => {
           loading?<Loader1/>:
           <>
           <Header/>
-          <List/>
+          <ChartList coin={data}/>
           <LineChart chartData={chartData}/>
           </>
          }

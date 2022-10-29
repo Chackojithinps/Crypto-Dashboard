@@ -1,0 +1,119 @@
+.list-coin-box{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    height: 93px;
+    align-items: center;
+ }
+ .list-logo-div{
+     display: flex;  
+     margin-bottom: 17px;
+ }
+ .list-logo{
+     width: 50px;
+     height: 50px;
+     margin-left: 2rem;
+     margin-top: 2rem;
+ }
+ .min{
+     width: 18%;
+ }
+ .list-data-div{
+     display: flex;
+     margin-bottom: 23px;
+ }
+ .list-coin-price{
+     margin-bottom: 16px;
+ }
+ .vol{
+     font-size: 1.2rem;
+ }
+ .vol_td{
+     display: none;
+ }
+ .col{
+   color: gainsboro;
+   font-size: 17px;
+ }
+ @media only screen and (max-width: 1185px) {
+    .list-logo{
+     width: 40px;
+     height: 40px;
+    }
+    .text-td{
+      font-size: 80%;
+    }
+    .coin-name{
+      margin-top: -10px;
+    }
+    .chip-td{
+      width: 85px;
+      height: 30px;
+      margin-top: 25px;
+    }
+    .trend-td{
+      width: 23px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+    }
+    .min{
+     width: 20%;
+    }
+ }
+ 
+ @media only screen and (max-width: 878px) {
+     .list-logo{
+         width: 35px;
+         height: 35px;
+         margin-left: 0px;
+     }
+     .text-td{
+         font-size: 70%;
+       }
+     .chip-td{
+         width: 70px;
+         height: 30px;
+         margin-top: 27px;
+         margin-left:4rem ;
+       }
+   
+     .min{
+         width: 30%;
+        }
+     .markt_cap{
+         padding-left: 10px;
+     }
+    
+    
+ }
+ @media only screen and (max-width: 716px) {
+     .text-td{
+         font-size: 60%;
+       }
+       .trend-td,.vol{
+         display: none;
+       }
+       .chip-td{
+         width: 50px;
+         height: 20px;
+         margin-top: 27px;
+         margin-left:2rem ;
+       }
+       .min{
+         width: 24%;
+       }
+       .markt_cap{
+         margin-top: 5px;
+         margin-left: 3px;
+       }
+       .vol_td{
+          display: block;
+       }
+       .volume_td{
+         display: none;
+       }
+ }
+ 

@@ -4,7 +4,7 @@ import TrendingUpRoundedIcon from '@mui/icons-material/TrendingUpRounded';
 import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
 import { Link } from 'react-router-dom';
 const List = ({coin}) => {
-   const [volume,setVolume]=useState(coin.total_volume.toFixed(2));
+   const [volume,setVolume]=useState(coin.market_data.total_volume.usd);
    useEffect(()=>{
       if(volume){
          if(volume>=1000 && volume<1000000){
@@ -25,7 +25,7 @@ const List = ({coin}) => {
       <div className='list-coin-box'>
          
        <div className='list-logo-div min'>
-          <img className='list-logo' src={coin.image}/>
+          <img className='list-logo' src={coin.image.large}/>
      
           <div className='coin-info coin-info-td'>
              <p className='coin-symbol text-td'>{coin.symbol}-USD</p>
@@ -35,13 +35,13 @@ const List = ({coin}) => {
        <div className='list-data-div min'>
           
          <div className='chip'>
-             {coin.price_change_percentage_24h>0 ?
-                (<div className='upChip text-td chip-td'>{"+"+coin.price_change_percentage_24h.toFixed(2)+" %"}</div>):
-                (<div className='downChip text-td chip-td'>{coin.price_change_percentage_24h.toFixed(2)+" %"}</div>)
+             {coin.market_data.price_change_percentage_24h>0?
+                (<div className='upChip text-td chip-td'>{"+"+coin.market_data.price_change_percentage_24h.toFixed(2)+" %"}</div>):
+                (<div className='downChip text-td chip-td'>{coin.market_data.price_change_percentage_24h.toFixed(2)+" %"}</div>)
                 }
          </div>
          <div className='trendIcon'>
-             {coin.price_change_percentage_24h>0?
+             {coin.market_data.price_change_percentage_24h>0?
                <div className='upTrend trend-td'>
                    <TrendingUpRoundedIcon/>
                </div>:
@@ -52,15 +52,15 @@ const List = ({coin}) => {
          </div>
       </div>
       <div className='list-coin-price min '>
-         {coin.price_change_percentage_24h>0 ?
-           <p className='price-up text-td'>${coin.current_price.toFixed(2)}</p>
-           :<p className='price-down text-td'>${coin.current_price.toFixed(2)}</p>
+         {coin.market_data.price_change_percentage_24h>0?
+           <p className='price-up text-td'>${coin.market_data.current_price.usd.toFixed(2)}</p>
+           :<p className='price-down text-td'>${coin.market_data.current_price.usd.toFixed(2)}</p>
          }
       </div>
      
-       <div className='coin-vol col markt_cap  min text-td volume_td'> ${coin.total_volume.toLocaleString()}</div>
+       <div className='coin-vol col markt_cap  min text-td volume_td'> ${coin.market_data.total_volume.usd.toLocaleString()}</div>
        <div className='coin-vol col markt_cap min text-td vol_td'> ${volume}</div>
-       <div className='coin-marketCap col vol min text-td'> ${coin.market_cap.toLocaleString()}</div>
+       <div className='coin-marketCap col vol min text-td'> ${coin.market_data.market_cap.usd.toLocaleString()}</div>
       
     </div>
   </Link>
