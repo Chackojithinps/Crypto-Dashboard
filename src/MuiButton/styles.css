@@ -1,0 +1,15 @@
+.selectForm{
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.selectInput{
+    width: 7rem;
+    height: 30px;
+    margin-left: 1rem;
+    background-color: var(--black);
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+    /* padding: 1rem; */
+    margin: 13px 13px 13px 13px;
+}
