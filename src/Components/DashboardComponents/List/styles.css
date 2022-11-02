@@ -5,6 +5,12 @@
    justify-content: center;
    height: 93px;
    align-items: center;
+
+}
+.list-coin-box:hover{
+  background: var(--darkgrey);
+  border-radius: 1rem;
+  transition:all 0.3s;
 }
 .list-logo-div{
     display: flex;  

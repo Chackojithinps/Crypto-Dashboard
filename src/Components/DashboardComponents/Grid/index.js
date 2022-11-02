@@ -5,7 +5,7 @@ import TrendingDownRoundedIcon from '@mui/icons-material/TrendingDownRounded';
 const Grid = ({coin}) => {
   return (
    <a href={`/coin?${coin.id}`}>
-    <div className='coin-box'>
+    <div  className={coin.price_change_percentage_24h>0?"coin-box":"red-box"}>
        <div className='logo-div'>
           <img className='logo' src={coin.image}/>
           <div className='coin-info'>
