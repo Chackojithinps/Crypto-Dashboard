@@ -8,10 +8,6 @@ import ChartList from '../Components/DashboardComponents/ChartList'
 import { Chart as ChartJS } from "chart.js/auto";
 
 
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-
 const CoinPages = () => {
     const [searchParams]=useSearchParams();
     const [data,setData]=useState([])
@@ -38,6 +34,10 @@ const CoinPages = () => {
           legend: {
             display: false,
           },
+        },
+        interaction:{
+            mode:"index",
+            intersect:false,
         },
       };
     
@@ -102,8 +102,8 @@ const CoinPages = () => {
               borderWidth: 2,
               fill: false,
               tension: 0.25,
-              backgroundColor: "white",
-              borderColor: "white",
+              backgroundColor:"#3a80e9" ,
+              borderColor:"#3a80e9" ,
               pointRadius: 0,
             },
           ],
@@ -142,8 +142,7 @@ const CoinPages = () => {
               borderWidth: 2,
               fill: false,
               tension: 0.25,
-              backgroundColor: "white",
-              borderColor: "white",
+             
               pointRadius: 0,
             },
           ],
@@ -158,20 +157,30 @@ const CoinPages = () => {
           loading?<Loader1/>:
           <>
           <Header/>
-          <ChartList coin={data}/>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={day}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value={30}>30</MenuItem>
-          <MenuItem value={60}>60</MenuItem>
-          <MenuItem value={90}>90</MenuItem>
-        </Select>
-          <LineChart chartData={chartData} options={options}/>
+          <div className='chartList'>
+            <ChartList coin={data}/>
+          </div>
+          <div className='chartDatas'>
+            <div className='chartSelect'>
+                 
+                     <label className='chartText'>Price Change in the Last</label>
+                   
+                     <select className='chart-options' value={day} onChange={handleChange}>
+                     <option style={{color:"black"}} value={7}>7 Days</option>
+                    <option style={{color:"black"}} value={30}>30 Days</option>
+                    <option style={{color:"black"}} value={60}>60 Days</option>
+                    <option  style={{color:"black"}} value={90}>90 Days</option>
+                
+                </select>
+            </div>
+            <div className='chartData'>
+                <LineChart chartData={chartData} options={options}/>
+            </div>
+          </div>
+          <div className="chart-description">
+                <h2>{data.name}</h2>
+                <p dangerouslySetInnerHTML={{ __html: data.description.en }} />
+            </div>
           </>
          }
        </div>

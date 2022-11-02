@@ -116,3 +116,52 @@
         display: none;
       }
 }
+.chartList {
+  margin-top: -42px;
+  background-color: var(--darkgrey);
+  width: 90%;
+  margin-left: 4%;
+  border-radius: 15px;
+}
+.chartText{
+  margin-left: 1rem;
+  
+}
+.chartDatas{
+  margin-top: 1rem;
+  background-color: var(--darkgrey);
+  padding-top: 3rem;
+  width: 90%;
+  margin-left: 4%;
+  border-radius: 15px;
+
+}
+.chartData{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+select.chart-options {
+  margin-left: 1rem;
+  padding: 10px;
+  background: var(--darkgray);
+  color: white;
+  font-weight: 500;
+  
+  border:1px solid var(--blue);
+  border-radius: 3px;
+  
+}
+.chart-description{
+  margin-top: 1rem;
+  background-color: var(--darkgrey);
+  padding-top: 1rem;
+  padding-left: 1rem;
+  width: 90%;
+  margin-left: 4%;
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+ 
+}
+
