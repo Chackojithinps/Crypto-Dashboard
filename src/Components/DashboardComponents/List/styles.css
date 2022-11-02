@@ -11,6 +11,7 @@
   background: var(--darkgrey);
   border-radius: 1rem;
   transition:all 0.3s;
+ 
 }
 .list-logo-div{
     display: flex;  
