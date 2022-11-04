@@ -3,7 +3,6 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './Pages/Home';
 import Dashboard from './Pages/Dashboard';
-import Search from './Pages/Search';
 import CoinPages from './Pages/CoinPages';
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
        <Routes>
          <Route path='/' element={<Home/>}/>
          <Route path='/dashboard' element={<Dashboard/>}/>
-         <Route path='/search' element={<Search/>}/>
          <Route path='/coin' element={<CoinPages/>}/>
        </Routes>
      </BrowserRouter>
