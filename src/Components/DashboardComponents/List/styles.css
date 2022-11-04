@@ -164,11 +164,19 @@ select.chart-options {
   background-color: var(--darkgrey);
   padding-top: 1rem;
   padding-left: 1rem;
-  width: 90%;
+  width: 88%;
   margin-left: 4%;
+  padding-right: 1rem;
   border-radius: 15px;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
  
 }
+@media only screen and (max-width: 716px) {
+  .chart-description{
+    width: 84%;
+  }
+}
 
+.chart-description a{
+  color: var(--blue);
+}

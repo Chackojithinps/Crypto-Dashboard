@@ -20,23 +20,23 @@
 }
 img.crypto-image {
     /* width: 65%; */
-    width: 24rem;
-    height: 42rem;
+    width: 24%;
     position: absolute;
-   right: 3rem;
+   right: 5rem;
+   top: 7rem;
 }
 .image-box{
-    position: relative;
+    
     bottom: 15rem;
-    right: 1rem;
+    right: 3rem;
 }
 
 img.blueShade {
     position: absolute;
-    right: 43px;
-    width: 19rem;
+    right: 65px;
+    width: 20%;
     object-fit: contain;
-    top: 8rem;
+    top: 15rem;
 }
 .para{
     color: var(--grey);
@@ -48,91 +48,87 @@ img.blueShade {
     gap: 2rem;
 }
 
-@media only screen and (max-width: 1433px) {
+
+@media only screen and (max-width: 1275px) {
     .big-heading{
-        font-size: 5rem;
-    }
-    .image-box{
-        margin-top: 10rem;
+        font-size: 7rem;
     }
     img.crypto-image{
-        width: 20rem;
-        height: 35rem;
+        top: 10rem;
     }
     img.blueShade{
-        width: 15rem;
-        height: 30rem;
+        top: 15rem;
     }
     .para{
         margin-top: -28px;
-        width: 30rem;
-    }
+      
+    
 }
-@media only screen and (max-width: 997px) {
+}
+@media only screen and (max-width: 1149px) {
+    .big-heading{
+        font-size: 5rem;
+    }
+    img.crypto-image{
+       /* min-width:250px ; */
+       top: 8rem;
+    }
+    img.blueShade{
+        top: 14rem;
+        /* min-width: 200px; */
+    }
+    .para{
+        margin-top: -28px;
+      
+    
+}
+}
+@media only screen and (max-width: 963px) {
     .big-heading{
         font-size: 3rem;
     }
-    .para{
-        /* margin-top: -28px; */
-        width: 20rem;
-    }
     img.crypto-image{
-        width: 15rem;
-        height: 25rem;
+       min-width:200px ;
+       top: 8rem;
     }
     img.blueShade{
-        width: 10rem;
-        height: 25rem;
-        margin-top: -4rem;
+        top: 13rem;
+        min-width: 170px;
     }
-    .image-box{
-        margin-top: 15rem;
-    }
+    .para{
+        margin-top: -28px;
+      width: 20rem;
+    
 }
-@media only screen and (max-width: 750px) {
-    .big-heading{
-        font-size: 2rem;
-    }
-    .para{
-        /* margin-top: -28px; */
-        width: 20rem;
-    }
-    img.crypto-image{
-        width: 10rem;
-        height: 18rem;
-    }
-    img.blueShade{
-        width: 7rem;
-        height: 24rem;
-        margin-top: -8rem;
-    }
-    .image-box{
-        margin-top: 15rem;
-    }
 }
-@media only screen and (max-width: 664px) {
-    .wrapper{
-        align-items: center;
-        justify-content: center;
-    }
+@media only screen and (max-width: 687px) {
+    
     .big-heading{
-        font-size: 2rem;
-        
+        font-size: 4rem;
     }
     .para{
-        /* margin-top: -28px; */
-        width: 20rem;
-    }
-    img.crypto-image{
-        width: 10rem;
-        height: 18rem;
-    }
-    img.blueShade{
-        width: 7rem;
-        height: 24rem;
-        margin-top: -8rem;
+        margin-top: -28px;
+      width: 20rem;
     }
     .image-box{
-        margin-top: 15rem;
+       position: absolute;
+       top: 28rem;
+     }
+
+}
+@media only screen and (max-width: 439px) {
+    
+    .big-heading{
+        font-size: 4rem;
     }
+  
+    .para{
+      margin-top: -28px;
+      width: 20rem;
+    }
+    .image-box{
+       position: absolute;
+       top: 35rem;
+     }
+
 }
