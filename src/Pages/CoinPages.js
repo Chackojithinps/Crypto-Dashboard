@@ -165,7 +165,7 @@ const CoinPages = () => {
                  
                      <label className='chartText'>Price Change in the Last</label>
                    
-                     <select className='chart-options' value={day} onChange={handleChange}>
+                     <select className='chart-options'  onChange={handleChange}>
                      <option style={{color:"black"}} value={7}>7 Days</option>
                     <option style={{color:"black"}} value={30}>30 Days</option>
                     <option style={{color:"black"}} value={60}>60 Days</option>

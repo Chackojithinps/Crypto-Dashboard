@@ -3,23 +3,24 @@ import TemporaryDrawer from './Drawer'
 import React from 'react'
 import Button from '../../Button'
 import './style.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className='navbar'>
        <h1 className='heading'>
-         <a href='/'>
+         <Link to='/'>
           <span className='heading-in'>CryptoTracker</span><span style={{color:"var(--blue)"}}>.</span>
-          </a>
+          </Link>
        </h1>
        <div className='links-flex'>
-          <a href='/'>
+          <Link to='/'>
              <p className='links'>Home</p>
-          </a>
-          <a href="/dashboard">
+          </Link>
+          <Link to="/dashboard">
              <p className="links">
                <Button text="Dashboard"/>
              </p>
-          </a>
+          </Link>
        </div>
        <div className="menu-div">
           <TemporaryDrawer/>

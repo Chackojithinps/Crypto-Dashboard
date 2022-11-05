@@ -23,6 +23,7 @@ const DashboardWrapper = ({data}) => {
           <TabList variant="fullWidth" value={value} onChange={handleChange} >
             <Tab label="Grid" sx={style}/>
             <Tab label="List" sx={style}/>
+           
           </TabList>
           <TabPanel value={0}>
           <div className='grid-flex'>
